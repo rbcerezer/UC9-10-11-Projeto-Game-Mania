@@ -1,0 +1,25 @@
+.menu .linkMenu {
+  text-decoration: none;
+  margin: 20px 10px 0px;
+  text-transform: uppercase;
+  color: darkblue;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.menu {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+}
