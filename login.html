@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstraps/css/bootstrap.min.css"
+    />
+
+    <title>Teste Validação</title>
+  </head>
+  <body>
+    <form class="row g-3" onsubmit="return Validar(), Checkbox()">
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" value="" />
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control" id="sobrenome" value="" />
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefaultUsername" class="form-label">E-mail</label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            aria-describedby="inputGroupPrepend2"
+          />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="cidade" />
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">Estado</label>
+        <select class="form-select" id="estado">
+          <option selected disabled value=""></option>
+          <option>São Paulo</option>
+          <option>Santa Catarina</option>
+          <option>Amazonas</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label"
+          >Código Postal</label
+        >
+        <input type="text" class="form-control" id="cep" />
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="checkbox"
+          />
+          <label class="form-check-label" for="checkbox">
+            Concordo com Termos e Condições!
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit" disabled>
+          Validar Formulário
+        </button>
+      </div>
+    </form>
+  </body>
+  <script type="text/javascript" src="jquery/jquary-v3.6.0.min.js"></script>
+  <script type="text/javaScript" src="validacao.js"></script>
+  <script type="text/javascript" src="bootstraps/js/bootstrap.min.js"></script>
+</html>
